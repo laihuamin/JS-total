@@ -75,6 +75,11 @@ foo.call(obj); //2
 - 新问题——当你第一个对象传入的是string，boolean，number这么三个基础类型时，又会发生什么呢
 > call和apply会把这些基本累心转化成new String(...),new Boolean(...),new Number(...)来处理
 ### new绑定
+> new操作符，对于大家来说并不陌生，那么，他是进行了什么样的操作呢？
+
+- new操作符做了什么？
+1、他会先创建一个原型为空的对象
+2、将这个函数的prototype赋值给对象的_pro
 ### 硬绑定
 ### 几个绑定的优先级
 ### 安全的使用方式
