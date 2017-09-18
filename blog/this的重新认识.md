@@ -79,8 +79,115 @@ foo.call(obj); //2
 
 - new操作符做了什么？
 1、他会先创建一个原型为空的对象
-2、将这个函数的prototype赋值给对象的_pro
+2、将这个函数的prototype赋值给对象的`_proto_`
+3、将这个对象当作this传入到函数中，如果没有return，直接返回函数中this的属性，如果有return，直接返回return中的内容
+- 接下来，我们来用函数模拟一下这个行为
+```
+function NewFunc(){
+    const obj = {};
+    if(func.prototype !== null){
+        obj._proto_ = func.prototype;        
+    }
+    var ret1 = func.apply(obj, Array.prototype.slice.call(arguments, 1))
+    if((typeof ret1 === 'object' || typeof ret1 === 'function') && ret1 !== null ){
+        return ret1
+    }
+    return obj;
+}
+```
+- 举几个例子
+```
+function Person1(name) {
+    this.name = name;
+}
+function Person2(name) {
+    this.name = name;
+    return this.name;
+}
+function Person3(name) {
+    this.name = name;
+    return new Array();
+}
+function Person4(name) {
+    this.name = name;
+    return new String(name);
+}
+function Person5(name) {
+    this.name = name;
+    return function() {};
+}
+
+
+const person1 = new Person1('xl');
+const person2 = new Person2('xl');
+const person3 = new Person3('xl');
+const person4 = new Person4('xl');
+const person5 = new Person5('xl');
+```
+- 结果
+```
+xl
+xl
+[]
+xl
+function(){}
+```
 ### 硬绑定
+> 介绍完上面这几个，还遗漏了一个，便是bind，这个就是我们这里将的硬绑定，bind会把this强制绑定到对象上
+
+```
+function thisBind(){
+    console.log(this.name)
+}
+obj={
+    name: 'laihuamin'
+}
+var bar = thisBind.bind(obj);
+bar(); //laihuamin
+```
+- 我们还可以实现一个简单的bind函数
+```
+function bind(fn, obj){
+    fn.apply(obj, arguments)
+}
+```
 ### 几个绑定的优先级
+- 隐形绑定和显性绑定的优先级判断
+```
+function thisBind(){
+    console.log(this.name);
+}
+obj1 = {
+    name: 'laihuamin',
+    fn: thisBind
+}
+
+obj2 = {
+    name: 'huaminlai',
+    fn: thisBind
+}
+
+obj1.fn(); //laihuamin
+obj1.fn.apply(obj2) //huaminlai
+```
+> 这里明显可以看出显性绑定优先级高于隐性绑定
+
+- new绑定和显性绑定、硬绑定
+> 硬绑定和显性绑定的优先级应该是一致的，因为bind在显性绑定的基础上封装了一层，那我们就比较显性绑定是不能与new绑定进行比较的，因为new没有办法和apply、call一起使用那么我们有什么更好的方法呢，可以让new绑定和硬绑定进行比较
+
+```
+function thisBind(){
+    console.log(this.name)
+}
+obj = {
+    name: 'laihuamin'
+}
+var bar = thisBind(obj);
+var obj2 = new bar();
+obj2 = {
+    name: 'huaminlai'
+}
+bar();
+```
 ### 安全的使用方式
 ### 软绑定
