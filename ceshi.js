@@ -151,18 +151,12 @@
 //     fn: thisBind
 // }
 
-obj1.fn();
-obj1.fn.apply(obj2)
-
-function thisBind(){
-    console.log(this.name)
+function thisBind(name){
+    this.name = name
 }
-obj = {
-    name: 'laihuamin'
-}
-var bar = thisBind(obj);
-var obj2 = new bar();
-obj2 = {
-    name: 'huaminlai'
-}
-bar();
+obj = {}
+var bar = thisBind.bind(obj);
+bar(2);
+var obj2 = new bar(3);
+console.log(obj.name);
+console.log(obj2.name);

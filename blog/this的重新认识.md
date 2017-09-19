@@ -151,6 +151,27 @@ function bind(fn, obj){
     fn.apply(obj, arguments)
 }
 ```
+- ES5中内置的bind函数
+```
+if(!Function.prototype.bind) {
+    Function.prototype.bind = function(oThis){
+        if(typeof this !== 'function') {
+            throw new TypeError(
+                "Function.prototype.bind what is trying to be bound is not callable"
+            );
+        }
+        var aArgs = Array.prototype.slice.call(arguments, 1),
+        fToBind = this,
+        fNOP = function(){},
+        fBound = function () {
+            return fToBind.apply((this instanceof fNOP && oThis ? this : oThis), aArgs.concat(Array.prototype.call(arguments)))
+        }
+        fNOP.prototype = this.prototype;
+        fBound.prototype = new fNOP();
+        return fBound;
+    }
+}
+```
 ### 几个绑定的优先级
 - 隐形绑定和显性绑定的优先级判断
 ```
@@ -177,17 +198,30 @@ obj1.fn.apply(obj2) //huaminlai
 
 ```
 function thisBind(){
-    console.log(this.name)
+    this.name = name
 }
-obj = {
-    name: 'laihuamin'
-}
-var bar = thisBind(obj);
-var obj2 = new bar();
-obj2 = {
-    name: 'huaminlai'
-}
-bar();
+obj = {}
+var bar = thisBind.bind(obj);
+bar(2);
+var obj2 = new bar(3);
+console.log(obj.name);  //2
+console.log(obj2.name);  //3
+```
+> 从这个例子我们可以看出，new绑定可以改变硬绑定的this的指向，所以，优先级是比硬绑定高的
+
+- this绑定优先级排序
+```
+new绑定 > 硬绑定 = 显示绑定 > 隐性绑定 > 默认绑定
+```
+- 如何去看this的绑定情况
+```
+1、先看有没有new关键字
+2、在看是否有显性绑定和硬绑定
+3、再次，你可以看是否隐形绑定
+4、最后在根据默认绑定来判断
 ```
 ### 安全的使用方式
+- 忽略this的情况
+
+
 ### 软绑定
