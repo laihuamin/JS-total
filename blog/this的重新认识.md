@@ -222,6 +222,45 @@ new绑定 > 硬绑定 = 显示绑定 > 隐性绑定 > 默认绑定
 ```
 ### 安全的使用方式
 - 忽略this的情况
+> 如果你把null和undefined作为this的绑定，这些值就会被忽略，实际应用的是默认的绑定
 
+```
+function foo() {
+    console.log(this.a)
+}
+var a = 2;
+foo.call(null); //2
+```
+- 这样的操作可以进行什么呢？有两个作用，第一个可以传入参数，第二个是可以进行函数柯里化
+```
+function foo() {
+    console.log(this.a + 'is' + this.b);
+}
+//展开参数
+foo.apply(null, [2, 3]);
+//类似与es6中的扩展运算符
+foo(...[2, 3]);
+//函数柯里化
+var bar = foo.bind(null, 2);
+bar(3); // 2+3
+```
+- 更安全的this
+> 忽略this绑定我们有更安全的方式，传入一个DMZ对象
 
+```
+//DMZ对象
+Object.create(null)
+//展开对象
+var a = Object.create(null);
+function foo() {
+    console.log(this.a + 'is' + this.b);
+}
+//展开参数
+foo.apply(a, [2, 3]);
+//类似与es6中的扩展运算符
+foo(...[2, 3]);
+//函数柯里化
+var bar = foo.bind(a, 2);
+bar(3); // 2+3
+```
 ### 软绑定
