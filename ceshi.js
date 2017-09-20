@@ -150,13 +150,8 @@
 //     name: 'huaminlai',
 //     fn: thisBind
 // }
-
-function thisBind(name){
-    this.name = name
-}
-obj = {}
-var bar = thisBind.bind(obj);
-bar(2);
-var obj2 = new bar(3);
-console.log(obj.name);
-console.log(obj2.name);
+b = ' ';
+c = 2;
+d = 1
+a = b && (c || d);
+console.log(a);
