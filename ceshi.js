@@ -150,8 +150,32 @@
 //     name: 'huaminlai',
 //     fn: thisBind
 // }
-b = ' ';
-c = 2;
-d = 1
-a = b && (c || d);
-console.log(a);
+var Main = {
+    data: function() {
+      return {
+        a: 1,
+        b: 2
+      };
+    },
+    methods: {
+      change() {
+        this.a = 2;
+        this.b = 1;
+      }
+    }
+  };
+  var Ctor = Vue.extend(Main);
+  var vm = new Ctor();
+  vm.$watch(
+    function() {
+      return this.a + this.b;
+    },
+    function(val) {
+      console.log("new value " + val);
+    },
+    {
+      sync: false
+    }
+  );
+  vm.change();
+  
