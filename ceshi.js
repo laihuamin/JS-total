@@ -150,7 +150,4 @@
 //     name: 'huaminlai',
 //     fn: thisBind
 // }
-let run = (function f(){ let i=0; function g(){i++; console.log(i)} return g})();
-setInterval(function(){
-   run()
-}, 1000);
+

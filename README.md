@@ -1,4 +1,5 @@
 # 博客
+### [所有文章](https://github.com/laihuamin/JS-total/issues)
 ## JS篇
 ### [JS知识流程图，详细](blog/JS知识总揽.md)
 ### [模块](blog/模块.md)
