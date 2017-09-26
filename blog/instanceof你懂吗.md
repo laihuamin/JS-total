@@ -65,15 +65,15 @@ function  instance_of (L, R){
 > 左边的Object的_proto_指向Function.prototype，Function.prototype指向Object.prototype
 - console.log(Function instanceof Function);
 > 左边的Function的_proto_指向Function.prototype
-console.log(Number instanceof Number);
+- console.log(Number instanceof Number);
 > 左边的Number的_proto_指向Function.prototype，所以原型链向上已经回不到Number.prototype,所以返回false
-console.log(String instanceof String);
+- console.log(String instanceof String);
 > 和上面同理
-console.log(Function instanceof Object);
+- console.log(Function instanceof Object);
 > 左边的Function的_proto_指向Function.prototype，而Function.prototype的_proto_指向Object.prototype，所以返回true
-console.log(Foo instanceof Function);
+- console.log(Foo instanceof Function);
 > Foo是构造函数，所以他的_proto_是指向Function.prototype，所以返回true
-console.log(Foo instanceof Foo); //false
+- console.log(Foo instanceof Foo); //false
 > 上面已经解释了指向，这个肯定为false
 ### 总结
 - instanceof搞懂两点很重要，一个是原型链，还有一个是instanceof操作符的机制，与君共勉，希望能给个star
