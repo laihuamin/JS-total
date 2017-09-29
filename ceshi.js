@@ -150,4 +150,6 @@
 //     name: 'huaminlai',
 //     fn: thisBind
 // }
-
+let str = '来铧敏';
+let encodeStr = escape(str);
+console.log(encodeStr);
