@@ -153,3 +153,7 @@
 let str = '来铧敏';
 let encodeStr = escape(str);
 console.log(encodeStr);
+console.log(unescape(encodeStr));
+let _encodeStr = encodeURIComponent(str);
+console.log(_encodeStr);
+console.log(escape('console.log("我要加密这个语句")'));
