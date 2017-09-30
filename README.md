@@ -8,6 +8,7 @@
 ### [你所不知道的setTimeout、setInterval](blog/定时器和计时器.md)
 ### [instanceof你懂吗](blog/instanceof你懂吗.md)
 ### [JS实用小技巧](blog/js的实用小技巧.md)
+### [编码和解码——你不能不懂](blog/编码与解码.md)
 ## Vue篇
 ### [keep-alive](blog/keep-alive.md)
 
