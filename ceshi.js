@@ -150,10 +150,17 @@
 //     name: 'huaminlai',
 //     fn: thisBind
 // }
-let str = '来铧敏';
-let encodeStr = escape(str);
-console.log(encodeStr);
-console.log(unescape(encodeStr));
-let _encodeStr = encodeURIComponent(str);
-console.log(_encodeStr);
-console.log(escape('console.log("我要加密这个语句")'));
+var hammingDistance = function(x, y) {
+    let num = x ^ y,
+    str = num.toString(2),
+    arr = str.split(''),
+    i = 0;
+    console.log(arr);    
+    arr.forEach((index) => {
+        if(index === '1') {
+            i++;
+        }
+    });
+    return i;
+};
+console.log(hammingDistance(2,4));
