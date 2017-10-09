@@ -10,6 +10,7 @@
 ### [JS实用小技巧](blog/js的实用小技巧.md)
 ### [编码和解码——你不能不懂](blog/编码与解码.md)
 ### [把cookie聊清楚](blog/cookie.md)
+### [一篇ajax的故事](blog/ajax简述.md)
 ## Vue篇
 ### [keep-alive](blog/keep-alive.md)
 
