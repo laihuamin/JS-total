@@ -1,7 +1,7 @@
 # 博客
 ### [所有文章](https://github.com/laihuamin/JS-total/issues)
 ## css篇
-### [css3——sticky深度挖掘](bolg/sticky你了解多少.md)
+### [css3——sticky深度挖掘](blog/sticky你了解多少.md)
 ## JS篇
 ### [JS知识流程图，详细](blog/JS知识总揽.md)
 ### [模块](blog/模块.md)
