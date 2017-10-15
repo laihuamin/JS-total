@@ -15,6 +15,8 @@
 ### [一篇ajax的故事](blog/ajax简述.md)
 ## Vue篇
 ### [keep-alive](blog/keep-alive.md)
+## Web篇
+### [Host文件是什么](blog/Host解析.md)
 
 #### 备注：
 ```
