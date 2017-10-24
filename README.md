@@ -14,6 +14,7 @@
 ### [编码和解码——你不能不懂](blog/编码与解码.md)
 ### [把cookie聊清楚](blog/cookie.md)
 ### [一篇ajax的故事](blog/ajax简述.md)
+### [console命令还能这么用](blog/console命令还能这么用.md)
 ## Vue篇
 ### [keep-alive](blog/keep-alive.md)
 ## Web篇
