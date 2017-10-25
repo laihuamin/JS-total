@@ -19,6 +19,8 @@
 ### [keep-alive](blog/keep-alive.md)
 ## Web篇
 ### [Host文件是什么](blog/Host解析.md)
+## nodeJS篇
+### [nodejs几种文件路径及path模块](blog/nodejs几种文件路径及path模块.md)
 
 #### 备注：
 ```
