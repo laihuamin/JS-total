@@ -26,6 +26,7 @@
 ### [webpack中的entry和context](blog/webpack中的entry和context.md)
 ## 代码规范
 ### [css代码规范](blog/css代码规范.md)
+### [js代码规范](blog/js代码规范.md)
 
 #### 备注：
 ```
