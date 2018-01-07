@@ -18,6 +18,7 @@
 ### [一看就懂的JS抽象语法树](blog/一看就懂的JS抽象语法树.md)
 ## Vue篇
 ### [keep-alive](blog/keep-alive.md)
+### [vdom的vnode](blog/vdom的vnode.md)
 ## Web篇
 ### [Host文件是什么](blog/Host解析.md)
 ## nodeJS篇
