@@ -4,6 +4,7 @@
 ### [css3——sticky深度挖掘](blog/sticky你了解多少.md)
 ## JS篇
 ### [JS知识流程图，详细](blog/JS知识总揽.md)
+### [细说Array.prototype.slice.call](blog/细说Array.prototype.slice.call.md)
 ### [ES6系列——let和const深入理解](blog/ES6系列——let和const深入理解.md)
 ### [模块](blog/模块.md)
 ### [函数](blog/函数.md)
