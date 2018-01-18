@@ -24,7 +24,7 @@
 ### [Host文件是什么](blog/Host解析.md)
 ## nodeJS篇
 ### [nodejs几种文件路径及path模块](blog/nodejs几种文件路径及path模块.md)
-### [【译】node js event loop part 1.1](blog/【译】node js event loop part 1.1.md)
+### [\【译\】node js event loop part 1.1](blog/【译】node js event loop part 1.1.md)
 ## webpack篇
 ### [webpack中hash和chunkhash是不是很眼熟？](blog/webpack中hash和chunkhash是不是很眼熟？.md)
 ### [webpack中的entry和context](blog/webpack中的entry和context.md)
