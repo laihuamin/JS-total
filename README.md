@@ -38,7 +38,7 @@ fork表示你想要补充完善这个项目的内容。
 ### [一篇ajax的故事](blog/ajax简述.md)
 ### [console命令还能这么用](blog/console命令还能这么用.md)
 ### [一看就懂的JS抽象语法树](blog/一看就懂的JS抽象语法树.md)
-### [JavaScript:(a==1 && a==2 && a==3)能输出ture么？](blog/JavaScript之(a==1 && a==2 && a==3)能输出ture么？.md)
+### [JavaScript:(a==1 && a==2 && a==3)能输出ture么？](blog/JavaScript之\(a\=\=1\ \&\&\ a\=\=2\ \&\&\ a\=\=3\)能输出ture么？.md)
 ## Vue篇
 ### [keep-alive](blog/keep-alive.md)
 ### [vdom的vnode](blog/vdom的vnode.md)
