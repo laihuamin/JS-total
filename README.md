@@ -7,6 +7,7 @@
 ##### [【译】node js event loop part 1.1](blog/【译】nodeJsEventLoopPart1.1.md)
 ##### [编写一个分析代码依赖的工具（一）](blog/编写一个分析代码依赖的工具（一）.md)
 ##### [汇总2017JS项目，总结我们从中学到了什么？](blog/汇总2017JS项目，总结我们从中学到了什么？.md)
+##### [🚀述说Parcel：A blazing fast, zero configuration web application bundler 📦](https://github.com/laihuamin/JS-total/issues/30)
 
 #### 备注：
 ```
