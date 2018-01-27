@@ -9,6 +9,12 @@
 ##### [汇总2017JS项目，总结我们从中学到了什么？](blog/汇总2017JS项目，总结我们从中学到了什么？.md)
 ##### [🚀述说Parcel：A blazing fast, zero configuration web application bundler 📦](https://github.com/laihuamin/JS-total/issues/30)
 
+#### 个人公众号
+![](http://laihuamin.oss-cn-beijing.aliyuncs.com/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
+```
+公众号每天会更新，会是自己的文章，也可能是看过别人的觉得不错的文章，在上班路上闲暇时分可以打开公众号看一看，岂不美哉，希望大家可以给个关注，勉励自己也勉励作者，谢谢
+```
+
 #### 备注：
 ```
 答案有错误的地方可以提交issues，喜欢我写的博文的，欢迎欢迎Star。
