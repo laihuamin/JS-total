@@ -46,6 +46,8 @@
 ##### [console命令还能这么用](blog/console命令还能这么用.md)
 ##### [一看就懂的JS抽象语法树](blog/一看就懂的JS抽象语法树.md)
 ##### [JavaScript:(a==1 && a==2 && a==3)能输出ture么？](blog/JavaScript之a==1&&a==2&&a==3能输出ture么？.md)
+#### 面试总结篇
+##### [JS系列（一）](blog/JS系列（一）.md)
 #### Vue篇
 ##### [keep-alive](blog/keep-alive.md)
 ##### [vdom的vnode](blog/vdom的vnode.md)
