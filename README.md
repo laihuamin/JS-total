@@ -48,6 +48,7 @@
 ##### [JavaScript:(a==1 && a==2 && a==3)能输出ture么？](blog/JavaScript之a==1&&a==2&&a==3能输出ture么？.md)
 #### 面试总结篇
 ##### [JS系列（一）](blog/JS系列（一）.md)
+##### [JS系列（二）](blog/JS系列（二）.md)
 #### Vue篇
 ##### [keep-alive](blog/keep-alive.md)
 ##### [vdom的vnode](blog/vdom的vnode.md)
