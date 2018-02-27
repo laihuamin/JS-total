@@ -1,4 +1,8 @@
-> 学前端也快一年了，最近想试试大公司的面试，然后这里把所有的知识点都整理出来，然后慢慢消化。该片总字数：，有兴趣的可以关注一下我的[blog](https://github.com/laihuamin/JS-total/issues)
+> 学前端也快一年了，最近想试试大公司的面试，然后这里把所有的知识点都整理出来，然后慢慢消化。该片总字数：2585，速读四分半，普通阅读7分钟。有兴趣的可以关注一下我的[blog](https://github.com/laihuamin/JS-total/issues)
+
+### 总的知识点概览
+
+语法、数据类型、运算、对象、function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步加载、模板引擎、前端MVC、前端MVVM、路由、模块化、Http、Canvas、jQuery、EMCAScript、ES6、NodeJS、Vue、React
 
 ### JS对象和属性
 
