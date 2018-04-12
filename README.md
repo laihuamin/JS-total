@@ -59,6 +59,7 @@
 #### Web篇
 ##### [Host文件是什么](blog/Host解析.md)
 #### nodeJS篇
+##### [建议使用nvm管理node](blog/建议使用nvm管理node.md)
 ##### [nodejs几种文件路径及path模块](blog/nodejs几种文件路径及path模块.md)
 ##### [【译】node js event loop part 1.1](blog/【译】nodeJsEventLoopPart1.1.md)
 #### webpack篇
