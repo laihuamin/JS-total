@@ -1,0 +1,26 @@
+{
+  "name": "JS-total",
+  "version": "1.0.0",
+  "description": "#### 备注： ``` 答案有错误的地方可以提交issues，喜欢我写的博文的，欢迎欢迎Star。",
+  "main": "ceshi.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laihuamin/JS-total.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laihuamin/JS-total/issues"
+  },
+  "homepage": "https://github.com/laihuamin/JS-total#readme",
+  "dependencies": {
+    "vdom": "0.0.22"
+  }
+}
