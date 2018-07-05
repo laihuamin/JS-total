@@ -40,6 +40,8 @@
 
 ##### [JS 知识流程图，详细](blog/JS知识总揽.md)
 
+##### [前端和后端的发展路径](blog/前端和后端的发展路径.md)
+
 ##### [细说 Array.prototype.slice.call](blog/细说Array.prototype.slice.call.md)
 
 ##### [ES6 系列——let 和 const 深入理解](blog/ES6系列——let和const深入理解.md)
