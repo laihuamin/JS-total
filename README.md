@@ -100,6 +100,8 @@
 
 #### nodeJS 篇
 
+##### [require工作原理](blog/require工作原理.md)
+
 ##### [建议使用 nvm 管理 node](blog/建议使用nvm管理node.md)
 
 ##### [nodejs 几种文件路径及 path 模块](blog/nodejs几种文件路径及path模块.md)
