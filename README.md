@@ -102,6 +102,8 @@
 
 #### nodeJS 篇
 
+##### [node中的EventLoop](blog/node中的EventLoop.md)
+
 ##### [require工作原理](blog/require工作原理.md)
 
 ##### [建议使用 nvm 管理 node](blog/建议使用nvm管理node.md)
