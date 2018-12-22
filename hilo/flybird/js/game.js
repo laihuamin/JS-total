@@ -3,9 +3,13 @@
         game.init();
     }
     var game = window.game = {
+        // 初始化数据
         width: 0,
         height: 0,
         scale: 0,
+        ground: null,
+        tick: null,
+        // 初始化游戏
         init: function() {
             this.asset = new game.asset();
             this.asset.on('complete', function(e) {
@@ -15,6 +19,7 @@
             }.bind(this));
             this.asset.load();
         },
+        // 初始化舞台
         initStage: function() {
             this.width = 720;
             this.height = 1280;
@@ -49,10 +54,11 @@
                     height: bgHeight + 'px' 
                 }
             }), this.stage.canvas)
+            // 创建地面
             this.ground = new Hilo.Bitmap({
                 id: 'ground',
                 image: this.asset.ground
-            })
+            }).addTo(this.stage)
             this.ground.y = this.height - this.ground.height;
             Hilo.Tween.to(this.ground, {x: -60}, {duration:300, loop:true})
             this.tick.addTick(Hilo.Tween)

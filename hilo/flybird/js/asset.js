@@ -1,8 +1,7 @@
 // 该模块主要是资源的整合和加载
-(function() {
-    var Asset = Hilo.Class.create({
+(function(game) {
+    var Asset = game.asset = Hilo.Class.create({
         Mixes: Hilo.EventMixin,
-
         queue: null,
         bg: null,
         ground: null,
@@ -17,7 +16,7 @@
             }, {
                 id: 'holdback', src: 'images/holdback.png'
             }, {
-                id: 'icon', src: 'images/icon.png'
+                id: 'icon', src: 'images/icon.jpg'
             }, {
                 id: 'number', src: 'images/number.png'
             }, {
@@ -50,4 +49,4 @@
             this.fire('complete');
         }
     })
-})()
+})(window.game)
