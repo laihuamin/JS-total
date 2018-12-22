@@ -6,6 +6,7 @@
         bg: null,
         ground: null,
         birdAtils: null,
+        ready: null,
         load: function() {
             var resources = [{
                 id: 'bg', src: 'images/bg.png'
@@ -32,6 +33,7 @@
         onComplete: function(e) {
             this.bg = this.queue.get('bg').content;
             this.ground = this.queue.get('ground').content;
+            this.ready = this.queue.get('ready').content;
             this.birdAtils = new Hilo.TextureAtlas({
                 image: this.queue.get('bird').content,
                 frames: [

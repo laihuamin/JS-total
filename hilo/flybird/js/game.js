@@ -9,6 +9,7 @@
         scale: 0,
         ground: null,
         tick: null,
+        readyGame: null,
         // 初始化游戏
         init: function() {
             this.asset = new game.asset();
@@ -16,6 +17,7 @@
                 this.asset.off('complete');
                 this.initStage();
                 this.initBackground();
+                this.initReady();
             }.bind(this));
             this.asset.load();
         },
@@ -62,6 +64,14 @@
             this.ground.y = this.height - this.ground.height;
             Hilo.Tween.to(this.ground, {x: -60}, {duration:300, loop:true})
             this.tick.addTick(Hilo.Tween)
+        },
+        // 准备开场动画
+        initReady: function() {
+            this.readyGame = new game.ReadyScene({
+                width: this.width,
+                height: this.height,
+                image: this.asset.ready
+            }).addTo(this.stage)
         }
     }
 })()
