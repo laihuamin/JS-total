@@ -10,6 +10,7 @@
         ground: null,
         tick: null,
         readyGame: null,
+        overScene: null,
         // 初始化游戏
         init: function() {
             this.asset = new game.asset();
@@ -17,7 +18,8 @@
                 this.asset.off('complete');
                 this.initStage();
                 this.initBackground();
-                this.initReady();
+                // this.initReady();
+                this.initOverScene();
             }.bind(this));
             this.asset.load();
         },
@@ -71,6 +73,14 @@
                 width: this.width,
                 height: this.height,
                 image: this.asset.ready
+            }).addTo(this.stage)
+        },
+        // 初始化结束场景
+        initOverScene: function() {
+            this.overScene = new game.OverScene({
+                width: this.width,
+                height: this.height,
+                image: this.asset.over
             }).addTo(this.stage)
         }
     }
