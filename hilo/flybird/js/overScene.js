@@ -33,6 +33,11 @@
                 image: protypes.image,
                 rect: [590, 176, 290, 176]
             });
+            // 玩家当前得分
+            // var scoreLabel = this.scoreLabel = new Hilo.BitmapText({
+            //     id: 'score',
+            //     image: protypes.
+            // })
             //白色的遮罩效果
             var whiteMask = this.whiteMask = new Hilo.View({
                 id: 'mask',

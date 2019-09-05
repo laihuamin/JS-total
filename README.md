@@ -2,6 +2,14 @@
 
 ##### [所有文章](https://github.com/laihuamin/JS-total/issues)
 
+#### 【ES6】系列
+
+##### [【ES6】变量声明（整理篇）](https://github.com/laihuamin/JS-total/issues/51)
+
+##### [【ES6】解构赋值（整理篇）](https://github.com/laihuamin/JS-total/issues/52)
+
+##### [【ES6系列】class基础（整理篇）](https://github.com/laihuamin/JS-total/issues/53)
+
 #### 高质量篇
 
 ##### [把 cookie 聊清楚](blog/cookie.md)

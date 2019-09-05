@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>socket</title>
+</head>
+<body>
+  <h1>webSocket客户端实例</h1>
+  <div class="msg"></div>
+</body>
+<script>
+  const socket = new WebSocket('Ws://localhost:8080');
+
+  socket.addEventListener('open', function(event) {
+    socket.send('hello Server!')
+  })
+
+  socket.addEventListener('message', function(event) {
+    console.log('Message from server', event.data);
+  })
+</script>
+</html>

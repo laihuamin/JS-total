@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/laihuamin/JS-total#readme",
   "dependencies": {
-    "vdom": "0.0.22"
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0",
+    "vdom": "0.0.22",
+    "ws": "^6.1.0"
   }
 }
