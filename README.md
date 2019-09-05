@@ -8,7 +8,7 @@
 
 ##### [【ES6】解构赋值（整理篇）](https://github.com/laihuamin/JS-total/issues/52)
 
-##### [【ES6系列】class基础（整理篇）](https://github.com/laihuamin/JS-total/issues/53)
+##### [【ES6】class基础（整理篇）](https://github.com/laihuamin/JS-total/issues/53)
 
 #### 高质量篇
 
