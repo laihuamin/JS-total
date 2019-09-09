@@ -73,7 +73,7 @@ const obj = {
 foo.call(obj); //2
 ```
 - 新问题——当你第一个对象传入的是string，boolean，number这么三个基础类型时，又会发生什么呢
-> call和apply会把这些基本累心转化成new String(...),new Boolean(...),new Number(...)来处理
+> call和apply会把这些类型累心转化成new String(...),new Boolean(...),new Number(...)来处理
 ### new绑定
 > new操作符，对于大家来说并不陌生，那么，他是进行了什么样的操作呢？
 
@@ -83,7 +83,7 @@ foo.call(obj); //2
 3、将这个对象当作this传入到函数中，如果没有return，直接返回函数中this的属性，如果有return，直接返回return中的内容
 - 接下来，我们来用函数模拟一下这个行为
 ```
-function NewFunc(){
+function NewFunc(func){
     const obj = {};
     if(func.prototype !== null){
         obj._proto_ = func.prototype;        
